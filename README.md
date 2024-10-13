@@ -116,7 +116,40 @@ Result using NumPy array: [ 6  8 10 12]
 ```
 
 
+## 4. Indexing
 
+NumPy provides more efficient ways to work with arrays using advanced indexing techniques.
+
+#### Normal Indexing and Slicing:
+
+```python
+a = np.arange(24).reshape(6, 4)
+print(a[1, 2])  # Output: 5
+print(a[1:3, 1:3])  # Output: array([[5, 6], [9, 10]])
+
+```
+### Fancy Indexing:
+
+A fancy index gets used when we want to fetch rows and columns and can't be fetched through normal indexing because there are no pattern matches so we use fancy indexing.  
+
+```python
+print(a[:, [0, 2, 3]])
+# Output:
+# array([[ 0,  2,  3],
+#        [ 4,  6,  7],
+#        [ 8, 10, 11],
+#        [12, 14, 15],
+#        [16, 18, 19],
+#        [20, 22, 23]])
+
+```
+#### Boolean Indexing:
+```python
+
+a = np.random.randint(1, 100, 24).reshape(6, 4)
+print(a[a > 50])  # Output: All elements greater than 50
+
+```
 
 
 
