@@ -1,3 +1,55 @@
+
+# NumPy Arrays vs Python Lists
+
+This repository demonstrates the advantages of using NumPy arrays over Python lists in terms of speed, memory efficiency, convenience, and advanced indexing features.
+
+## Index
+
+1. [Speed Comparison](#1-speed-comparison)
+   - Python Lists
+   - NumPy Arrays
+   - Why NumPy is faster
+   - Why Python lists are slow
+
+2. [Memory Comparison](#2-memory-comparison)
+   - Python Lists
+   - NumPy Arrays
+
+3. [Convenience](#3-convenience)
+   - Element-wise operations
+   - Broadcasting
+   - Advanced Indexing
+   - Python List Example
+   - NumPy Array Example
+
+4. [Indexing](#4-indexing)
+   - Normal Indexing and Slicing
+   - Fancy Indexing
+   - Boolean Indexing
+
+5. [Broadcasting](#5-broadcasting)
+   - Broadcasting Rules
+   - Examples of Broadcasting
+     - Broadcasting Works
+     - Broadcasting Fails
+   - Key Takeaways
+
+6. [Mathematical Operations](#6-mathematical-operations)
+   - Sigmoid Function
+   - Mean Squared Error (MSE)
+
+7. [Working with Missing Values](#7-working-with-missing-values)
+
+8. [Plotting Graphs](#8-plotting-graphs)
+   - y = x Function Plot
+   - y = x² Function Plot
+   - y = sin(x) Function Plot
+   - y = xlog(x) Function Plot
+   - Sigmoid Function Plot
+
+
+
+
 # NumPy Arrays vs Python Lists
 
 This repository demonstrates the advantages of using NumPy arrays over Python lists in terms of speed, memory efficiency, convenience, and advanced indexing features.
