@@ -242,16 +242,106 @@ The shapes (2, 2) and (3,) are not compatible for broadcasting, as the dimension
 
 
 
+## 6. Mathematical Operations.
+
+NumPy allows for mathematical operations to be applied directly to arrays.
+
+### Sigmoid Function:
+```python
+def sigmoid(array):
+    return 1 / (1 + np.exp(-array))
+
+```
+
+### Mean Squared Error (MSE):
+```python
+def mse(actual, predicted):
+    return np.mean((actual - predicted)**2)
+
+
+```
+
+## 7. Working with Missing Values.
+
+```python
+
+a = np.array([1, 2, 3, 4, np.nan, 6])
+print(a[~np.isnan(a)])  # Output: array([1., 2., 3., 4., 6.])
+
+
+```
+np.isnan() go to every data point and ask you are nan value and if it is nan it shows true otherwise, it is false.
+
+
+## 8. Plotting Graphs
+
+NumPy arrays are well-suited for generating data to plot graphs using Matplotlib.
+
+### Example: y = x Function Plot:
+
+```python
+# plotting a 2D plot
+# x = y
+import matplotlib.pyplot as plt
+
+x = np.linspace(-10,10,100)
+y = x
+
+plt.plot(x,y)
+```
+![y=x Function](https://github.com/shanto173/Numpy_2024_02_Advanced-Numpy-/blob/main/images/x.png)
 
 
 
+### Example: y = x^2 Function Plot:
+
+```python
+# y = x^2
+x = np.linspace(-10,10,100)
+y = x**2
+
+plt.plot(x,y)
+```
+![x^2 Function](https://github.com/shanto173/Numpy_2024_02_Advanced-Numpy-/blob/main/images/x2.png)
+
+
+### Example: y = sin(x) Function Plot:
+
+```python
+# y = sin(x)
+x = np.linspace(-10,10,100)
+y = np.sin(x)
+
+plt.plot(x,y)
+```
+![sinx](https://github.com/shanto173/Numpy_2024_02_Advanced-Numpy-/blob/main/images/sinx.png)
 
 
 
+### Example: y = xlog(x) Function Plot:
+
+```python
+
+# y = xlog(x)
+x = np.linspace(-10,10,100)
+y = x * np.log(x)
+
+plt.plot(x,y)
+```
+![xlogx Function](https://github.com/shanto173/Numpy_2024_02_Advanced-Numpy-/blob/main/images/xlogx.png)
 
 
 
+### Example: Sigmoid Function Plot:
 
+```python
+import matplotlib.pyplot as plt
+x = np.linspace(-10, 10, 100)
+y = 1 / (1 + np.exp(-x))
+plt.plot(x, y)
+plt.show()
+```
+![Sigmoid Function](https://github.com/shanto173/Numpy_2024_02_Advanced-Numpy-/blob/main/images/sigmoid.png)
 
 
 
